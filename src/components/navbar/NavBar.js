@@ -12,6 +12,7 @@ export const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    document.title = 'Arash Ghafoori';
     const onScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true);
@@ -25,6 +26,8 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+
+
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
@@ -33,7 +36,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="#home">
             <span className="logo">AG</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
