@@ -1,5 +1,4 @@
 import "./projects.css";
-import { Card } from "../card/Card";
 import { useState } from "react";
 import project1 from '../../assets/img/project-1.png';
 import project2 from '../../assets/img/project-2.png';
@@ -65,7 +64,7 @@ export const Projects = () => {
       </div>
       <div className="tab-content mt-3">
         <div className={`tab-pane ${activeTab === 1 ? "active" : ""}`}>
-          <img className="project-image" src={project1}/>
+          <img className="project-image" src={project1} alt="project-1"/>
           <p>
             Made the backend of an Android carpool program by using the
             Express.js frameworks. This project required the usage of the
@@ -74,7 +73,7 @@ export const Projects = () => {
           </p>
         </div>
         <div className={`tab-pane ${activeTab === 2 ? "active" : ""}`}>
-        <img className="project-image" src={project2}/>
+        <img className="project-image" src={project2} alt="project-2"/>
           <p>
             Completed a fully responsive personal portfolio by using React
             components and the bootstrap library to modify designs. The design
@@ -83,7 +82,7 @@ export const Projects = () => {
           </p>
         </div>
         <div className={`tab-pane ${activeTab === 3 ? "active" : ""}`}>
-        <img className="project-image" src={project3}/>
+        <img className="project-image" src={project3} alt="project-3"/>
           <p>
           Given a dataset of longitudes, latitudes and connecting train station,
           made a program that created a graph from the given nodes. Then by
@@ -93,7 +92,7 @@ export const Projects = () => {
           </p>
         </div>
         <div className={`tab-pane ${activeTab === 4 ? "active" : ""}`}>
-        <img className="project-image" src={project4}/>
+        <img className="project-image" src={project4} alt="project-4"/>
           <p>
           Created a python program that takes in normal python code and converts
           it to its corresponding assembly language in ARM-64 language. This
@@ -102,7 +101,7 @@ export const Projects = () => {
           </p>
         </div>
         <div className={`tab-pane ${activeTab === 5 ? "active" : ""}`}>
-        <img className="project-image" src={project5}/>
+        <img className="project-image" src={project5} alt="project-5"/>
           <p>
           Created a google plugin by using knowledges in react and JavaScript to
           find the corresponding size of a brand for a shoe given a base size.

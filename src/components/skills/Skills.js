@@ -3,12 +3,16 @@ import "./skills.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import meter1 from "../../assets/img/meter1.svg";
-import meter2 from "../../assets/img/meter2.svg";
-import meter3 from "../../assets/img/meter3.svg";
+import webdev from "../../assets/img/test1.png";
+import frontend from "../../assets/img/frontend.png";
+import backend from "../../assets/img/backend.png";
+import testing from "../../assets/img/testing.png";
+import algorithm from "../../assets/img/algorithm.png";
+import OOP from "../../assets/img/OOP.png";
+import database from "../../assets/img/database.png";
+import architecture from "../../assets/img/architecture.png";
 
 export const Skills = () => {
-
   const [slidesToShow, setSlidesToShow] = useState(4); // Initial number of items to display
 
   useEffect(() => {
@@ -24,11 +28,11 @@ export const Skills = () => {
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     handleResize();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -45,50 +49,48 @@ export const Skills = () => {
         <div className="skill-description">
           <h1>Skills</h1>
           <p>
-            Below you could scroll through an estimate of some of the technical skills that I
-            have acquired over the past several years.
+            Below you could scroll through an estimate of some of the technical
+            skills that I have acquired over the past several years.
           </p>
         </div>
         <Slider {...settings}>
           <div className="skill">
-            <img src={meter2} alt="image" />
+            <img src={webdev} alt="webdev" />
             <h3>Web Development</h3>
-            <img />
           </div>
           <div className="skill">
-            <img src={meter2} alt="image" />
+            <img src={backend} alt="backend" />
             <h3>Back End</h3>
-            <img />
           </div>
           <div className="skill">
-            <img src={meter2} alt="image" />
+            <img src={frontend} alt="frontend" />
             <h3>Front End</h3>
-            <img />
+            
           </div>
           <div className="skill">
-            <img src={meter2} alt="image" />
+            <img src={testing} alt="testing" />
             <h3>Software Testing</h3>
-            <img />
+            
           </div>
           <div className="skill">
-            <img src={meter2} alt="image" />
+            <img src={algorithm} alt="algorithms" />
             <h3>Algorithms and Data Structures</h3>
-            <img />
+            
           </div>
           <div className="skill">
-            <img src={meter2} alt="image" />
+            <img src={OOP} alt="OOP" />
             <h3>Object Oriented Programming</h3>
-            <img />
+            
           </div>
           <div className="skill">
-            <img src={meter2} alt="image" />
+            <img src={database} alt="Databases" />
             <h3>Databases</h3>
-            <img />
+            
           </div>
           <div className="skill">
-            <img src={meter2} alt="image" />
+            <img src={architecture} alt="Architecture" />
             <h3>Software Architectures and Design Patterns</h3>
-            <img />
+            
           </div>
         </Slider>
       </div>
