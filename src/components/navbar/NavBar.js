@@ -12,7 +12,6 @@ export const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    document.title = 'Arash Ghafoori';
     const onScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true);
