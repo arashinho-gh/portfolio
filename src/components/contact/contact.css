@@ -37,12 +37,6 @@
   transition: 0.3s ease-in-out;
   position: absolute;
   bottom: 0;
-  
-  @media (max-width: 1000px) {
-    position: relative;
-    left:0rem;
-    top: 2rem;
-  }
 }
 .contact button::before {
   content: "";
@@ -90,7 +84,7 @@
   height: 200px;
   border-radius: 10px;
   padding: 5px;
-  min-width: 200px;
+  min-width: none;
 }
 .name-email {
   display: flex;
