@@ -6,7 +6,6 @@
   flex-direction: column;
 }
 .contact h2 {
-  padding: 0px 0px 50px 0px;
   display: flex;
   font-size: 36px;
 }
@@ -17,11 +16,7 @@
   position: relative;
   padding-bottom: 80px;
   width: 80%;
-  height: 400px;
-  @media (max-width: 1400px) {
-    flex-direction: column;
-    height: 600px;
-  }
+  flex-direction: column;
 }
 .contact button {
   border-radius: 4px;
@@ -35,8 +30,8 @@
   font-size: 18px;
   background-color: transparent;
   transition: 0.3s ease-in-out;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: 2rem;
 }
 .contact button::before {
   content: "";
@@ -61,29 +56,24 @@
   position: absolute;
 }
 .contact-message {
-  width: 40%;
+  width: 550px;
+  min-width: 250px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  @media (max-width: 1400px) {
-    width: 80%;
-    margin-top: 3rem;
-    margin-left: 0rem
+  @media max-width(1000px) {
+    width: 90%
   }
 }
 .contact-message label {
   font-size: 20px;
-  @media (max-width: 1400px) {
-    position: relative;
-  }
 }
 .contact-message textarea {
   width: 80%;
   height: 200px;
   border-radius: 10px;
   padding: 5px;
-  min-width: 200px;
 }
 .name-email {
   display: flex;
@@ -91,10 +81,7 @@
   width: 20%;
   align-items: center;
   justify-content: center;
-  @media (max-width: 1400px) {
-    width: 80%;
-    padding-top: 3rem;
-  }
+  padding-bottom: 2rem;
 }
 
 .name {
