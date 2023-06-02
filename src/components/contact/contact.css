@@ -56,7 +56,7 @@
   position: absolute;
 }
 .contact-message {
-  width: 550px;
+  width: 450px;
   min-width: 250px;
   display: flex;
   justify-content: center;
